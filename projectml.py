@@ -57,7 +57,7 @@ print(f"Rows in Test Set: {len(X_test)}")
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import svm
-model = LogisticRegression(C=0.01, solver='liblinear').fit(X_train,Y_train)
+model = LogisticRegression(C=0.01, solver='liblinear', class_weight='balanced').fit(X_train, Y_train)
 # model = KNeighborsClassifier(n_neighbors = 4).fit(X_train, Y_train)
 # model = svm.SVC(kernel='rbf')
 # model.fit(X_train, Y_train)
