@@ -141,10 +141,17 @@ new_data['Prediction'] = outcome
 print("Predictions for New Data:")
 print(new_data)
 
-!pip install tabulate
+# !pip install tabulate
 
 from tabulate import tabulate
 
 # Convert DataFrame to table
 table = tabulate(new_data, headers='keys', tablefmt='pretty')
 print(table)
+
+import pickle
+
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+print("✅ model.pkl saved successfully!")

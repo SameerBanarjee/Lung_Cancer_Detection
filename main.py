@@ -44,7 +44,6 @@ load_model()
 #  Feature order must match your training data
 # ─────────────────────────────────────────────
 FEATURE_ORDER = [
-    "GENDER",           # 1=Male, 0=Female
     "AGE",              # numeric
     "SMOKING",          # 1=Yes, 0=No
     "YELLOW_FINGERS",
@@ -68,15 +67,15 @@ def demo_predict(features):
     For development / demo purposes only.
     """
     risk_factors = [
-        features[2],   # SMOKING
-        features[3],   # YELLOW_FINGERS
-        features[6],   # CHRONIC_DISEASE
-        features[9],   # WHEEZING
-        features[11],  # COUGHING
-        features[12],  # SHORTNESS_OF_BREATH
-        features[14],  # CHEST_PAIN
+        features[1],   # SMOKING
+        features[2],   # YELLOW_FINGERS
+        features[5],   # CHRONIC_DISEASE
+        features[8],   # WHEEZING
+        features[10],  # COUGHING
+        features[11],  # SHORTNESS_OF_BREATH
+        features[13],  # CHEST_PAIN
     ]
-    age_factor = 1 if features[1] > 60 else 0
+    age_factor = 1 if features[0] > 60 else 0
     score = sum(risk_factors) + age_factor
     probability = round(min(score / 8.0, 0.98), 2)
     prediction = 1 if probability >= 0.50 else 0
