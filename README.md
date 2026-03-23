@@ -23,6 +23,14 @@ This project leverages machine learning techniques to detect and predict lung ca
 ## Dataset
 The dataset used in this project includes medical reports data, environmental and daily life factors and patient data available on public websites. Data preprocessing steps include handling missing values, scaling features, and splitting the data into training and testing sets.
 
+## STEPS TO RUN THE PROJECT
+Download the project in your local system.
+Open in VS Code Editor.
+## Open a new terminal, run the command " pip install -r requirements.txt "
+Once the requirements are installed successfully 
+## Run another command in the terminal " python main.py "
+You will get the live server link, press Ctrl+link to go to the dashboard.
+
 ## Results
 The project achieves a high accuracy of prediction, with detailed evaluation metrics. Visualization of model performance, such as ROC curves and confusion matrices, is included.
 
