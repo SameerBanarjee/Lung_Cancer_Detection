@@ -66,10 +66,16 @@
     }
     .logo-text {
       font-family: 'Syne', sans-serif;
-      font-weight: 800; font-size: 1.4rem;
+      font-weight: 800;
+      font-size: 1.4rem;
       letter-spacing: -.5px;
       background: linear-gradient(90deg, var(--accent), #88eeff);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+
+      background-clip: text;              /* standard */
+      -webkit-background-clip: text;      /* for Chrome/Safari */
+      
+      color: transparent;                 /* fallback */
+      -webkit-text-fill-color: transparent;
     }
     .logo-sub { font-size: .7rem; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
 
