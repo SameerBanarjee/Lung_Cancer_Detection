@@ -1,4 +1,4 @@
-# Lung_Cancer_Detection
+# PULMOSCAN - Lung_Cancer_Detection_and_Prediction_System
 
 ## Overview
 This project leverages machine learning techniques to detect and predict lung cancer, aiming to provide early diagnosis and improve patient outcomes. By analyzing medical reports data, environmental factors, and patient records,  this system seeks to identify patterns indicative of lung cancer, supporting healthcare professionals in decision-making.
@@ -33,6 +33,10 @@ You will get the live server link, press Ctrl+link to go to the dashboard.
 
 ## Results
 The project achieves a high accuracy of prediction, with detailed evaluation metrics. Visualization of model performance, such as ROC curves and confusion matrices, is included.
+
+## GO AND SCAN YOUR LUNGS AT PULMOSCAN - LUNG CANCER DETECTION & PREDICTION SYSTEM 
+https://pulmoscan-r1y0.onrender.com/
+
 
 ## Contribution
 Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request. Please ensure adherence to the coding standards outlined in the `CONTRIBUTING.md` file.
